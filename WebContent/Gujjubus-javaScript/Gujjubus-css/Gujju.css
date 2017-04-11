@@ -1,0 +1,40 @@
+/* CSS Document */
+
+span {
+	
+	
+	text-align: center;
+	color:#0099FF;
+	table-layout:fixed;
+	background-color:#FFFFFF
+}
+
+.effect{
+
+	
+	text-align: center;
+	border: #0099FF solid;
+text-transform:capitalize;
+
+}
+
+span:hover {
+text-transform:capitalize;
+background-color: #FFFFFF;
+color:#000000;
+ text-transform:uppercase;
+	border: #0066FF solid;
+	
+cursor:pointer;
+font-size:15px;
+}
+img {
+color:#FFFFFF;
+	float: left;
+}
+
+img:hover {
+	transition: 2s all;
+	transform: rotateY(360deg);
+	filter: grayscale(100%);
+}
