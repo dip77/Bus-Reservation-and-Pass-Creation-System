@@ -11,15 +11,15 @@ import java.util.Properties;
 
 public class MysqlConnection {
 
-	private static final String username="username";
-	private static final String password="password";
-	private static  final String url="url";
+	private static final String USERNAME="username";
+	private static final String PASSWORD="password";
+	private static  final String URL="url";
 	private static String driverClass="com.mysql.jdbc.Driver";
 	public static Connection getConnection(){
 		Connection conn=null;
 		try {
 				Class.forName(driverClass);
-				conn= DriverManager.getConnection(getProperty(url), getProperty(username), getProperty(password));
+				conn= DriverManager.getConnection(getProperty(URL), getProperty(USERNAME), getProperty(PASSWORD));
 		if(conn==null)
 			System.out.println("not connected");
 		else
